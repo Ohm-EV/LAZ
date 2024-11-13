@@ -1,0 +1,3846 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a4954e3dbb3051384fe21c27e7d4bd3a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a4954e3dbb3051384fe21c27e7d4bd3a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a4954e3dbb3051384fe21c27e7d4bd3a = L.map(
+                "map_a4954e3dbb3051384fe21c27e7d4bd3a",
+                {
+                    center: [37.622307037837835, -122.14698756756755],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5d9b36f769465de91560cc8160bf88e7 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_5d9b36f769465de91560cc8160bf88e7.addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var marker_3b6fb025f1047eee05d6983531b7f899 = L.marker(
+                [37.80063945762446, -122.27797407672101],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_3ed1f0012d62de3787b247c8072dad33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3b6fb025f1047eee05d6983531b7f899.setIcon(icon_3ed1f0012d62de3787b247c8072dad33);
+        
+    
+            marker_3b6fb025f1047eee05d6983531b7f899.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6722654/5e12454a65e791f959146a986570f392/5344F530_0AC9_4279_A531_E064642BF380_3e979231-edb8-46fc-bd11-221d3fdb237c.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (ALAMEDA / 7TH 4K 006)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1b51b9ff3b7e63c209c63d1a3922aba = L.marker(
+                [37.800561114847405, -122.27801360982252],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_3e380fc79b178f71c2d70a84a7d998cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a1b51b9ff3b7e63c209c63d1a3922aba.setIcon(icon_3e380fc79b178f71c2d70a84a7d998cf);
+        
+    
+            marker_a1b51b9ff3b7e63c209c63d1a3922aba.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6722654/70e326c644b96ddbb916329645b9d398/7961DB61_F71E_4BBB_A47C_0C84363E7DC3_028ca539-b036-4dc8-a036-50ad90b5c5e1.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (ALAMEDA / 7TH 4K 009)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5babeaa3569dc33bd937b6d311ebd1f0 = L.marker(
+                [37.80061643959327, -122.27798720553363],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_e70b0c8712dc70579afa683c9a8c7730 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5babeaa3569dc33bd937b6d311ebd1f0.setIcon(icon_e70b0c8712dc70579afa683c9a8c7730);
+        
+    
+            marker_5babeaa3569dc33bd937b6d311ebd1f0.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6716516/bf06fe75dfe49c15aed27308a9548ce4/DC003F43_B873_4B18_8466_C32C744D27DF_e0281fa3-def0-4b51-8af3-76714e2ca366.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (ALAMEDA / 7TH 4K 001)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_96f9d803859c8eb65b144a4a5e364c78 = L.marker(
+                [37.65814242155833, -122.09397222827349],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_6fac182f2cdad2c89285ab9f903e047f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_96f9d803859c8eb65b144a4a5e364c78.setIcon(icon_6fac182f2cdad2c89285ab9f903e047f);
+        
+    
+            marker_96f9d803859c8eb65b144a4a5e364c78.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6722654/8a73c909ef2057a7f66b2bdce96ae318/A3FC1EC1_9288_466D_836D_D758F9689908_2e916607-8d7d-4b62-b1f0-0939d143394e.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (AMADOR 4K 001)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8eab1009f5fc4a5a98b070286b54a30b = L.marker(
+                [37.33495082299287, -121.89495075249741],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_798a3ee1bfbe98d2dc4320758914ff69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8eab1009f5fc4a5a98b070286b54a30b.setIcon(icon_798a3ee1bfbe98d2dc4320758914ff69);
+        
+    
+            marker_8eab1009f5fc4a5a98b070286b54a30b.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="nan" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">SemaConnect 620</span> (EVC 3)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/Blink%20logo.png" style="max-height: 80px; max-width: 100%;" alt="Blink">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd61d4126d7aee472ff4c5fb47a945b4 = L.marker(
+                [37.82252190307841, -122.2589600212572],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_72cef7a9e6f4f0d2119c42906fbba78d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_dd61d4126d7aee472ff4c5fb47a945b4.setIcon(icon_72cef7a9e6f4f0d2119c42906fbba78d);
+        
+    
+            marker_dd61d4126d7aee472ff4c5fb47a945b4.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="nan" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">TurboDX</span> (42133F4D)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://www.edf-re.com/wp-content/uploads/PowerFlex-logo-RGB-2021.png" style="max-height: 80px; max-width: 100%;" alt="Powerflex">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c459447773a3c7d06674cbd186db9b5a = L.marker(
+                [37.82252265563362, -122.25895338747009],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_a1cc62edbac201b4854b2e4b6d33c3d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c459447773a3c7d06674cbd186db9b5a.setIcon(icon_a1cc62edbac201b4854b2e4b6d33c3d8);
+        
+    
+            marker_c459447773a3c7d06674cbd186db9b5a.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="nan" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">TurboDX</span> (422C39CB)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://www.edf-re.com/wp-content/uploads/PowerFlex-logo-RGB-2021.png" style="max-height: 80px; max-width: 100%;" alt="Powerflex">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c0054e324f66932168d1f38f30d39fe1 = L.marker(
+                [37.82251248605243, -122.25900529429015],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_2aab0db7d0af6cef37cdb52aabac0de8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c0054e324f66932168d1f38f30d39fe1.setIcon(icon_2aab0db7d0af6cef37cdb52aabac0de8);
+        
+    
+            marker_c0054e324f66932168d1f38f30d39fe1.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="nan" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">TurboDX</span> (422C39F9)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://www.edf-re.com/wp-content/uploads/PowerFlex-logo-RGB-2021.png" style="max-height: 80px; max-width: 100%;" alt="Powerflex">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd7795926fefcbc1b5a490ece1d850d0 = L.marker(
+                [37.82254399390959, -122.2589859699295],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_0f8ef3a1194d35122dcd0829c60f8449 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_dd7795926fefcbc1b5a490ece1d850d0.setIcon(icon_0f8ef3a1194d35122dcd0829c60f8449);
+        
+    
+            marker_dd7795926fefcbc1b5a490ece1d850d0.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="nan" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">TurboDX</span> (421CE31B)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://www.edf-re.com/wp-content/uploads/PowerFlex-logo-RGB-2021.png" style="max-height: 80px; max-width: 100%;" alt="Powerflex">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b85e8d8dfd2d94d839dcaca332ac0662 = L.marker(
+                [37.822483339509525, -122.25904198626658],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_dbb65ab49ba768531449e2795b65f003 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b85e8d8dfd2d94d839dcaca332ac0662.setIcon(icon_dbb65ab49ba768531449e2795b65f003);
+        
+    
+            marker_b85e8d8dfd2d94d839dcaca332ac0662.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="nan" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">TurboDX</span> (422C478E)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://www.edf-re.com/wp-content/uploads/PowerFlex-logo-RGB-2021.png" style="max-height: 80px; max-width: 100%;" alt="Powerflex">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0e11f477fb31da9f9b7c3e2b0c98a7b0 = L.marker(
+                [37.822467144746156, -122.25904113205011],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_914e5b5e99590e1042710fa14b43d329 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0e11f477fb31da9f9b7c3e2b0c98a7b0.setIcon(icon_914e5b5e99590e1042710fa14b43d329);
+        
+    
+            marker_0e11f477fb31da9f9b7c3e2b0c98a7b0.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="nan" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">TurboDX</span> (4213311E)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://www.edf-re.com/wp-content/uploads/PowerFlex-logo-RGB-2021.png" style="max-height: 80px; max-width: 100%;" alt="Powerflex">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_293b3c5715186b5733882578021d3651 = L.marker(
+                [37.800715003574986, -122.26502270426222],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_4187975ce3c1205353004816b8fc87c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_293b3c5715186b5733882578021d3651.setIcon(icon_4187975ce3c1205353004816b8fc87c3);
+        
+    
+            marker_293b3c5715186b5733882578021d3651.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6722654/3d1ca41882a5b945fc76d682d94ada93/56902755_6DCF_4589_AAF3_3AD94F7C9AD5_55ccfa31-13e2-490a-ade5-816608c446fa.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (ALCO STATIONS / 2ND FLR 4000 01)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_828061fc31fc08277b26f9f3fd236516 = L.marker(
+                [37.80070914179134, -122.2649654952726],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_d610e878ab518d3525d1ef6fc1be2fd4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_828061fc31fc08277b26f9f3fd236516.setIcon(icon_d610e878ab518d3525d1ef6fc1be2fd4);
+        
+    
+            marker_828061fc31fc08277b26f9f3fd236516.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6716516/964dd9541bcdb969b9833c7539e4f964/15EB23A0_FF3B_44E1_91AB_2E0658A144F5_b16dec5f-a908-4157-bcfd-cb1d17ef020f.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (ALCO STATIONS / 2ND FLR 4000 02)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c5dd4439eb0a0444fdad68b49f2ef55 = L.marker(
+                [37.8007434042656, -122.26495397910256],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_fc38bd1fddc5aa412e9ea5a92b24a5d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7c5dd4439eb0a0444fdad68b49f2ef55.setIcon(icon_fc38bd1fddc5aa412e9ea5a92b24a5d1);
+        
+    
+            marker_7c5dd4439eb0a0444fdad68b49f2ef55.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6722654/cb19922931487773c9f8d6943e8d656e/0F2610C2_918E_4A37_8C71_983C70A37553_5fce7f60-fa65-4d5d-8044-6a969d349a2e.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (ALCO STATIONS / 2ND FLR 4000 03)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c89f55eb239b52029b42161eb5b0fd4b = L.marker(
+                [37.80070868734827, -122.26497721772829],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_6f149d4f2d1e3ee2be0185e8e05b26ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c89f55eb239b52029b42161eb5b0fd4b.setIcon(icon_6f149d4f2d1e3ee2be0185e8e05b26ac);
+        
+    
+            marker_c89f55eb239b52029b42161eb5b0fd4b.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6716516/acfeadb6c20ef4aecc0741d341ae1128/2A2EE1E4_F5B6_4C93_8527_7DDE0D22A859_b8cd2c01-f4ac-4218-97c8-14a19eae66c1.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4010-HD-GW</span> (ALCO STATIONS / 2ND FLR 4K 01)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dc348ad545e1f255f8bb0b8f51594b80 = L.marker(
+                [37.8005771200345, -122.27799825126797],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_04fba885c434fbbca73a644ef2b3d13d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_dc348ad545e1f255f8bb0b8f51594b80.setIcon(icon_04fba885c434fbbca73a644ef2b3d13d);
+        
+    
+            marker_dc348ad545e1f255f8bb0b8f51594b80.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6716516/0c88d9825013e793893fcccd2beb1a34/FC421BC3_02EF_434B_8D4F_6A1154519C44_8530b38e-f988-4365-a43d-89f9d248c021.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (ALAMEDA / 7TH 4K 002)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a69e747eb13e780077710f612f5692fb = L.marker(
+                [37.80060818736765, -122.27797982135054],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_a2e1459ca0baf51417f22d3ca66b1a4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a69e747eb13e780077710f612f5692fb.setIcon(icon_a2e1459ca0baf51417f22d3ca66b1a4c);
+        
+    
+            marker_a69e747eb13e780077710f612f5692fb.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6722654/7de17104c43e16cd52cee973d676761e/5450B644_FFB6_48DD_B7A6_7CAC7290EE49_dabb63de-75f3-4f28-9521-e88b9fca6338.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (ALAMEDA / 7TH 4K 003)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_39501bc01f90421da6d5889f30fdeecc = L.marker(
+                [37.8006390193427, -122.27803479057053],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_418a13ed0ec5cdd3aa6a14e4e9746491 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_39501bc01f90421da6d5889f30fdeecc.setIcon(icon_418a13ed0ec5cdd3aa6a14e4e9746491);
+        
+    
+            marker_39501bc01f90421da6d5889f30fdeecc.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6722654/26b0fe88536c63a7be50933edc7c7229/6BC86D2B_A73B_4A41_B1C4_A50287A1103F_22448846-9852-4e9a-b350-6d386b2229d0.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (ALAMEDA / 7TH 4K 005)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_250fc6068708e0e5e49347c14e514921 = L.marker(
+                [37.80061617636898, -122.27804816896064],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_b8b723eff76e65b880987a4605dc2a86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_250fc6068708e0e5e49347c14e514921.setIcon(icon_b8b723eff76e65b880987a4605dc2a86);
+        
+    
+            marker_250fc6068708e0e5e49347c14e514921.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6716516/afa4e3d8210a615ed250bdeb8c4c9985/6E3A8730_E151_4491_AEB3_50A6DB35B585_80aa4cea-c671-4e65-872c-b9d766d96f76.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (ALAMEDA / 7TH 4K 007)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c3d53a5c170d97702e5f0dba377ea94 = L.marker(
+                [37.80060892926961, -122.27798071233462],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_c90cf0516e6d07361e3ce3456e88a2ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7c3d53a5c170d97702e5f0dba377ea94.setIcon(icon_c90cf0516e6d07361e3ce3456e88a2ca);
+        
+    
+            marker_7c3d53a5c170d97702e5f0dba377ea94.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6722654/2fe19358caf39845f869e29a49993bcd/821D6021_5CD8_4885_B33E_8A49ABF55ABC_60a6260a-42d4-43e8-a276-e3f6586d76f2.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (ALAMEDA / 7TH 4K 008)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_15617360310ea60bd7bbed3dea5c4382 = L.marker(
+                [37.35212454543846, -121.90799930284473],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_6fff66289cd66b60029044f65fdca865 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_15617360310ea60bd7bbed3dea5c4382.setIcon(icon_6fff66289cd66b60029044f65fdca865);
+        
+    
+            marker_15617360310ea60bd7bbed3dea5c4382.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6716516/6e838fa1401347b461e6c1798b8cd851/EF084358_7229_4E83_ABCD_CBE7F8E9A24C_7ab65acc-9829-45ba-902a-57482dbbcfdf.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (COUNTY CCPARKGARAGE 1)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_69c408bcc027c26a08fc47a3a929cb90 = L.marker(
+                [37.352058989281026, -121.90804683514953],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_6d5b81275a1b83c73b390c721ba9be05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_69c408bcc027c26a08fc47a3a929cb90.setIcon(icon_6d5b81275a1b83c73b390c721ba9be05);
+        
+    
+            marker_69c408bcc027c26a08fc47a3a929cb90.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6716516/158baf741f5b7dba58d5bad314d48537/ADF98ECD_EC87_4227_B382_1811DC78AD19_cbab4f00-1f65-4bd0-ba8b-cae6517bf105.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (COUNTY CCPARKGARAGE 2)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b072e076c95cad0234b80c6a45a45b21 = L.marker(
+                [37.352096555916695, -121.90802789802987],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_892dd6f13f5e8963d5dd6712d1f9caeb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b072e076c95cad0234b80c6a45a45b21.setIcon(icon_892dd6f13f5e8963d5dd6712d1f9caeb);
+        
+    
+            marker_b072e076c95cad0234b80c6a45a45b21.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6716516/a337e37beda4d7027124706c1584f162/80547D2A_0835_4FE2_957E_621630BA70AE_a1ea085c-6812-4d97-acc2-26d99bccfc0c.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (COUNTY CCPARKGARAGE 3)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5dd7406467ada2d0b92bfad5c56d080e = L.marker(
+                [37.35205598509573, -121.90797834829431],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_1cb380a35a41e3231be677187c6bdcfa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5dd7406467ada2d0b92bfad5c56d080e.setIcon(icon_1cb380a35a41e3231be677187c6bdcfa);
+        
+    
+            marker_5dd7406467ada2d0b92bfad5c56d080e.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6716516/a52039473404a7426a4c2c705f9b4354/D9174A24_E53D_485C_BC0D_75E76F1BD2F1_8dc0b80b-4671-4eac-a8f0-86652d5726c9.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (COUNTY CCPARKGARAGE 5)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2697279be4c638605e41c01058a2397b = L.marker(
+                [37.352089447262, -121.90797282804942],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_20da935d6412b58dd6f267db19b736ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2697279be4c638605e41c01058a2397b.setIcon(icon_20da935d6412b58dd6f267db19b736ee);
+        
+    
+            marker_2697279be4c638605e41c01058a2397b.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6716516/f8350f22e8168d6d0182dc0902b45280/E7A0DCE0_CB75_44B6_A115_3BE3D324F52A_41b21925-6b1e-487a-9690-2c99d626cef5.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (COUNTY CCPARKGARAGE 7)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e268b6a2fd23d530afd544b7f74f5199 = L.marker(
+                [37.352132004365785, -121.90797161360965],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_c631fc62f8aa59ee9edf28a2d5954569 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e268b6a2fd23d530afd544b7f74f5199.setIcon(icon_c631fc62f8aa59ee9edf28a2d5954569);
+        
+    
+            marker_e268b6a2fd23d530afd544b7f74f5199.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6716516/36b1108e3bfa66c4c39a8762ddc16617/C605EDAE_3328_4047_9B4A_777F7CEA0D58_56afe504-a3a4-440d-831c-7bf9418ad489.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (COUNTY CCPARKGARAGE 6)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c631ec9413d446f2fb38cf7aee3639c = L.marker(
+                [37.822502914340085, -122.25899742948678],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_73c80aaef6d081f4aba8467f528576dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1c631ec9413d446f2fb38cf7aee3639c.setIcon(icon_73c80aaef6d081f4aba8467f528576dd);
+        
+    
+            marker_1c631ec9413d446f2fb38cf7aee3639c.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="nan" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">TurboDX</span> (unknown02)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://www.edf-re.com/wp-content/uploads/PowerFlex-logo-RGB-2021.png" style="max-height: 80px; max-width: 100%;" alt="Powerflex">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_011bc208c19c57185ddfd1a318543eb8 = L.marker(
+                [37.80061872140491, -122.27804160333558],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_930e068a32333b3a6b666257fb1554bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_011bc208c19c57185ddfd1a318543eb8.setIcon(icon_930e068a32333b3a6b666257fb1554bb);
+        
+    
+            marker_011bc208c19c57185ddfd1a318543eb8.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6716516/19514172b9b6d70cb7ff9915917837e8/89D70F3E_8872_4C78_B501_4A531DCD1FE9_692b8849-0c76-484d-8bd8-9c024531e6a3.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (ALAMEDA / 7TH 4K 004)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a5811e7045965f58d63ca331f08550f9 = L.marker(
+                [37.800659626490045, -122.26495268838791],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_f82a78e6312d28b9ce77bb8f0653ee71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a5811e7045965f58d63ca331f08550f9.setIcon(icon_f82a78e6312d28b9ce77bb8f0653ee71);
+        
+    
+            marker_a5811e7045965f58d63ca331f08550f9.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6716516/7a159bf7969ecd1cebf8339fbfa9063d/CCCFC79E_D7A0_42ED_9D2E_D7D5F922930D_0c7159c9-154c-4f5c-bd39-93b619933f37.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4010-HD-GW</span> (ALCO STATIONS / 2ND FLR 4K 02)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_13c2922932c73bfc3de8e824ab5b6c7a = L.marker(
+                [37.80072721118357, -122.26497892113025],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_5fe1186a8a78c3e2ee4454fd82b1a822 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_13c2922932c73bfc3de8e824ab5b6c7a.setIcon(icon_5fe1186a8a78c3e2ee4454fd82b1a822);
+        
+    
+            marker_13c2922932c73bfc3de8e824ab5b6c7a.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6716516/6fae40e6a7d579174ade0e85b982650a/178D22CD_1211_4CA0_9FB6_B26AC2D6FB13_356a72f9-03a6-45ff-b84b-12bf3e24876d.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4010-HD-GW</span> (ALCO STATIONS / 2ND FLR 4K 03)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_21eb886d1204a974b2ae14ea6aed326d = L.marker(
+                [37.82245457269368, -122.25896855312948],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_6180106343c6a8d14b4d6a949ccd0044 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_21eb886d1204a974b2ae14ea6aed326d.setIcon(icon_6180106343c6a8d14b4d6a949ccd0044);
+        
+    
+            marker_21eb886d1204a974b2ae14ea6aed326d.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="nan" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">TurboDX</span> (unknown01)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://www.edf-re.com/wp-content/uploads/PowerFlex-logo-RGB-2021.png" style="max-height: 80px; max-width: 100%;" alt="Powerflex">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6e7328f4beafa4509d3fdda562507060 = L.marker(
+                [37.800703570449905, -122.26504190865471],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_29f1671d10f70d2d35d89fd0076e2e56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6e7328f4beafa4509d3fdda562507060.setIcon(icon_29f1671d10f70d2d35d89fd0076e2e56);
+        
+    
+            marker_6e7328f4beafa4509d3fdda562507060.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6716516/92eda23afb589949d6b88e1a49679780/D7B1873B_774E_4778_AF8D_2379223821CD_3227bd08-d1c7-4fb5-a599-d6e71bfb457f.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4010-HD-GW</span> (ALCO STATIONS / 2ND FLR 4K 04)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_47daf1e9749d8844f1a4a33e217e302b = L.marker(
+                [37.800662918264536, -122.26501702389268],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_830e20c445e6ea36e873de11b480db69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_47daf1e9749d8844f1a4a33e217e302b.setIcon(icon_830e20c445e6ea36e873de11b480db69);
+        
+    
+            marker_47daf1e9749d8844f1a4a33e217e302b.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6722654/6cada78e3040541135c58d8ca708f1c8/531735EB_AB51_4961_BD37_3FADBF9F6CD8_3dc70087-9dd0-46db-a992-62c794e17997.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (ALCO STATIONS / 2ND FLR 4K 05)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9df9af2502aa1abdd3ecafcacda3e7e2 = L.marker(
+                [37.335008660266936, -121.89495893750745],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_b4fb97885f330704e64a1f152109d2a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9df9af2502aa1abdd3ecafcacda3e7e2.setIcon(icon_b4fb97885f330704e64a1f152109d2a9);
+        
+    
+            marker_9df9af2502aa1abdd3ecafcacda3e7e2.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/laz_images/drive-download-20241113T064823Z-001/IMG_7874.heic" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (Deloitte Station 1)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f6f7d108307bb65a065222128bbc67d = L.marker(
+                [37.352110610181164, -121.90797388682745],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_563eab435d7f70b2882d57a359143ba7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8f6f7d108307bb65a065222128bbc67d.setIcon(icon_563eab435d7f70b2882d57a359143ba7);
+        
+    
+            marker_8f6f7d108307bb65a065222128bbc67d.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6716516/a7813a2298947aa668d3c2819fa56811/2CDE8A4F_4839_4D47_93F4_997727F0EF5D_e52166b2-85f7-4f5f-ba84-2e48ce3cc5df.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (COUNTY CCPARKGARAGE 4)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_67d540d8598dfc8433fd5adb8ddf109c = L.marker(
+                [37.35207150344778, -121.90804093869495],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_71855a81e7060b0312a6f7779bffe0b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_67d540d8598dfc8433fd5adb8ddf109c.setIcon(icon_71855a81e7060b0312a6f7779bffe0b4);
+        
+    
+            marker_67d540d8598dfc8433fd5adb8ddf109c.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6716516/c988b58fd4ea6fa5a9a817397d0edd7c/3C00E4BF_B223_4F89_A071_699CC9E9EDCA_c1bef1ef-6752-4f40-8778-5ac042951a06.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (COUNTY CCPARKGARAGE 8)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cf4a52840150031bb9e5aa914a06f651 = L.marker(
+                [37.35214987366822, -121.90796423136231],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_8ca5c565c171243ba2db74527b03e654 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cf4a52840150031bb9e5aa914a06f651.setIcon(icon_8ca5c565c171243ba2db74527b03e654);
+        
+    
+            marker_cf4a52840150031bb9e5aa914a06f651.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6716516/33c34b9970b4f84d56e59b5c76d519cd/F6BF7592_219F_49DA_9906_18B317600EBA_7db9b559-d1b9-42ce-a834-6456b048f74e.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (COUNTY CCPARKGARAGE 9)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8d656861345f364afdbf99fdcac01a36 = L.marker(
+                [37.35207119196701, -121.90797776541824],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_a3ec6cb9f4c41ed756ca4bd965bc1f17 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8d656861345f364afdbf99fdcac01a36.setIcon(icon_a3ec6cb9f4c41ed756ca4bd965bc1f17);
+        
+    
+            marker_8d656861345f364afdbf99fdcac01a36.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6716516/43ef3f54429a132c529c68abb44c2dee/44937787_04F3_4F8F_A960_B5F7EEDBF977_f7e2e801-e926-448a-ac8f-498b6bdbb771.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (COUNTY CCPARKGARAGE 12)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6cbcf34a90421e216c91d73261dd7c22 = L.marker(
+                [37.352080995766215, -121.9080282741796],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_0a6cb7868cac3126db5a3be13aeb4eb3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6cbcf34a90421e216c91d73261dd7c22.setIcon(icon_0a6cb7868cac3126db5a3be13aeb4eb3);
+        
+    
+            marker_6cbcf34a90421e216c91d73261dd7c22.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6716516/4517a0fb41af9567203b55fd8d724d97/34125DC5_5256_4B80_8DC3_045854A582AC_3c66bece-6fcd-4629-9592-7f993e9c8155.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (COUNTY CCPARKGARAGE 11)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84cc9a235ecd418d824e03be9d9b0f3e = L.marker(
+                [37.82246380484134, -122.25895847939199],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_08a3e75f9b41c671706b801dbe6eb892 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_84cc9a235ecd418d824e03be9d9b0f3e.setIcon(icon_08a3e75f9b41c671706b801dbe6eb892);
+        
+    
+            marker_84cc9a235ecd418d824e03be9d9b0f3e.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="nan" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">TurboDX</span> (420ED8C4)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://www.edf-re.com/wp-content/uploads/PowerFlex-logo-RGB-2021.png" style="max-height: 80px; max-width: 100%;" alt="Powerflex">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eaf188b98f07470a64d8165cc5af1950 = L.marker(
+                [37.822481023404606, -122.25901559697016],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_2481d6a0d6d3688b4492c22776d322d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_eaf188b98f07470a64d8165cc5af1950.setIcon(icon_2481d6a0d6d3688b4492c22776d322d4);
+        
+    
+            marker_eaf188b98f07470a64d8165cc5af1950.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="nan" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">TurboDX</span> (421389F1)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://www.edf-re.com/wp-content/uploads/PowerFlex-logo-RGB-2021.png" style="max-height: 80px; max-width: 100%;" alt="Powerflex">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_140a876ef2f1d6fb56c772cbfb2f3551 = L.marker(
+                [37.658121249210744, -122.09395279787641],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_c13bbd3a6ba48c7b98c90c963c84385a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_140a876ef2f1d6fb56c772cbfb2f3551.setIcon(icon_c13bbd3a6ba48c7b98c90c963c84385a);
+        
+    
+            marker_140a876ef2f1d6fb56c772cbfb2f3551.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6722654/e852ffdecadaae967eec82161a49af49/4FF4B529_80EF_461B_9765_6BA0705F7949_c05d942b-c620-4732-bbac-0e34f10c94cc.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (AMADOR 4K 006)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f5bbd6fe175ab9fb35e676c93b639f4 = L.marker(
+                [37.6580842752427, -122.09399853045102],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_994d246bd8e9b79fd2ef4b14cce068fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8f5bbd6fe175ab9fb35e676c93b639f4.setIcon(icon_994d246bd8e9b79fd2ef4b14cce068fe);
+        
+    
+            marker_8f5bbd6fe175ab9fb35e676c93b639f4.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6716516/2fe1f97f93148ba7a1ae5530b24ade98/67051DF1_912A_4880_8303_EFE9872D2F68_3becdaad-dc36-4bb9-bf1e-207b41e9ce6c.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (AMADOR 4K 005)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8750fad0ab647cc84d9902b7381a7da6 = L.marker(
+                [37.658062926843634, -122.09399552425987],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_f7b72ef1d996a81acfca26aa9f0e8b0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8750fad0ab647cc84d9902b7381a7da6.setIcon(icon_f7b72ef1d996a81acfca26aa9f0e8b0a);
+        
+    
+            marker_8750fad0ab647cc84d9902b7381a7da6.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6722654/d76d2aa725226a7684bc205730301d43/5E481CF9_E3EF_46EA_9108_FA40CDF34D48_b6186f41-2691-432a-870b-1fe65e92d8b6.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (AMADOR 4K 004)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f18720b3ddca8dd9567adba835dae4e6 = L.marker(
+                [37.3344864044418, -121.89301291506503],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_80050bfa497ed296a693c05cbd2010b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f18720b3ddca8dd9567adba835dae4e6.setIcon(icon_80050bfa497ed296a693c05cbd2010b4);
+        
+    
+            marker_f18720b3ddca8dd9567adba835dae4e6.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="nan" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">SemaConnect 620</span> (BAE060626)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/Blink%20logo.png" style="max-height: 80px; max-width: 100%;" alt="Blink">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7dde55ff3a744338d9f50208d4748604 = L.marker(
+                [37.3345162913861, -121.89301400917945],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_bda6db569ca31b32f3e40bbe711d3d14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7dde55ff3a744338d9f50208d4748604.setIcon(icon_bda6db569ca31b32f3e40bbe711d3d14);
+        
+    
+            marker_7dde55ff3a744338d9f50208d4748604.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="nan" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">SemaConnect 620</span> (BAE904471)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/Blink%20logo.png" style="max-height: 80px; max-width: 100%;" alt="Blink">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b4e0253430f417d3845faf5f952f1579 = L.marker(
+                [37.33502246272456, -121.89498923205078],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_abbf367834373705fe0eede0a0678758 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b4e0253430f417d3845faf5f952f1579.setIcon(icon_abbf367834373705fe0eede0a0678758);
+        
+    
+            marker_b4e0253430f417d3845faf5f952f1579.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/laz_images/drive-download-20241113T064823Z-001/IMG_7875.heic" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (Deloitte Station 2)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ddb6624a598d25ed153d1d5f1b3434d = L.marker(
+                [37.335002847304516, -121.89496416276101],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_f4b9a9db198226de59d1827037d509ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5ddb6624a598d25ed153d1d5f1b3434d.setIcon(icon_f4b9a9db198226de59d1827037d509ad);
+        
+    
+            marker_5ddb6624a598d25ed153d1d5f1b3434d.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="nan" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">SemaConnect 620</span> (EVC 4)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/Blink%20logo.png" style="max-height: 80px; max-width: 100%;" alt="Blink">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b8232afcef7bfe4b03903d066a6d6f1 = L.marker(
+                [37.335017018851985, -121.89496259359622],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_9a0b32acfbe2d887418afe8cde00a370 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9b8232afcef7bfe4b03903d066a6d6f1.setIcon(icon_9a0b32acfbe2d887418afe8cde00a370);
+        
+    
+            marker_9b8232afcef7bfe4b03903d066a6d6f1.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="nan" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">SemaConnect 620</span> (EVC 5)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/Blink%20logo.png" style="max-height: 80px; max-width: 100%;" alt="Blink">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2454a8abb4ee51f0078ebd3d29d47a09 = L.marker(
+                [37.65812383066232, -122.09396300464675],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_920eaad103f315d9c6ddbd43a591b966 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2454a8abb4ee51f0078ebd3d29d47a09.setIcon(icon_920eaad103f315d9c6ddbd43a591b966);
+        
+    
+            marker_2454a8abb4ee51f0078ebd3d29d47a09.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6722654/ee8862832725ce32c84397c205c3734e/F35A43B6_1FD3_433B_A1BB_893F9E7DD584_351534c6-bd61-45f1-81d5-0ca0258cf9dd.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (AMADOR 4K 003)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_886ff628764742a3e9414713b425f5e6 = L.marker(
+                [37.658140809785706, -122.09395248151868],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_52b80d14b0593f609a6b4898244bd92b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_886ff628764742a3e9414713b425f5e6.setIcon(icon_52b80d14b0593f609a6b4898244bd92b);
+        
+    
+            marker_886ff628764742a3e9414713b425f5e6.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://s3.eu-central-1.amazonaws.com/onefid.content.assets/qfbfnlrotfamhhhq/mobile/6716516/f10e97bbf973e417adfd7c7a05e8afd5/70EBDDD4_3A95_4DA8_9222_07C5DC3AE9B8_4e388438-52ce-4af2-a8ad-97baa7f930dd.jpg" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (AMADOR 4K 002)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35a496e94c7ff1bf2d8f1e75ed54f230 = L.marker(
+                [37.33499443970612, -121.89500958359618],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_c1fef310a6186579f48d6c005cfe0244 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_35a496e94c7ff1bf2d8f1e75ed54f230.setIcon(icon_c1fef310a6186579f48d6c005cfe0244);
+        
+    
+            marker_35a496e94c7ff1bf2d8f1e75ed54f230.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="nan" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">SemaConnect 620</span> (EVC 6)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/Blink%20logo.png" style="max-height: 80px; max-width: 100%;" alt="Blink">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_58cd85d2475f1f85d6a9219b9d323285 = L.marker(
+                [37.334549257238194, -121.89101958797117],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_3779f2bb2e123f5d2de8164a0d43f0bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_58cd85d2475f1f85d6a9219b9d323285.setIcon(icon_3779f2bb2e123f5d2de8164a0d43f0bd);
+        
+    
+            marker_58cd85d2475f1f85d6a9219b9d323285.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="nan" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">SemaConnect 620</span> (EVC 1)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/Blink%20logo.png" style="max-height: 80px; max-width: 100%;" alt="Blink">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f9bac56c776703c1d47675f502d7f335 = L.marker(
+                [37.3344734582943, -121.8929990014846],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_15425c6a15b4961b35646be6dd36858a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f9bac56c776703c1d47675f502d7f335.setIcon(icon_15425c6a15b4961b35646be6dd36858a);
+        
+    
+            marker_f9bac56c776703c1d47675f502d7f335.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="nan" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">SemaConnect 620</span> (BAE904472)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/Blink%20logo.png" style="max-height: 80px; max-width: 100%;" alt="Blink">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2e91c3ddb1c5794f23cd6ec5c5bd6409 = L.marker(
+                [37.33451080492975, -121.89303924001865],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_00e2334667deffb108afdfa12dfe493f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2e91c3ddb1c5794f23cd6ec5c5bd6409.setIcon(icon_00e2334667deffb108afdfa12dfe493f);
+        
+    
+            marker_2e91c3ddb1c5794f23cd6ec5c5bd6409.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="nan" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">SemaConnect 620</span> (BAE904473)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/Blink%20logo.png" style="max-height: 80px; max-width: 100%;" alt="Blink">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eed201b48a5b16a4d588a45b5412773a = L.marker(
+                [37.33452631163004, -121.89300680511845],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_b305b6d6fa697abfd6c4e6d62ed25d12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_eed201b48a5b16a4d588a45b5412773a.setIcon(icon_b305b6d6fa697abfd6c4e6d62ed25d12);
+        
+    
+            marker_eed201b48a5b16a4d588a45b5412773a.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="nan" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">SemaConnect 620</span> (BAE060625)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/Blink%20logo.png" style="max-height: 80px; max-width: 100%;" alt="Blink">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_702d3bbc45533d4ca65f5b4654534716 = L.marker(
+                [37.334459185907434, -121.89298697401838],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_7f28f396144d23aa40aae44ef2b24535 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_702d3bbc45533d4ca65f5b4654534716.setIcon(icon_7f28f396144d23aa40aae44ef2b24535);
+        
+    
+            marker_702d3bbc45533d4ca65f5b4654534716.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="nan" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">SemaConnect 620</span> (BAE607149)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/Blink%20logo.png" style="max-height: 80px; max-width: 100%;" alt="Blink">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9bf93ad7a848fa7a1ae4979640e53a13 = L.marker(
+                [37.33450142101384, -121.89096395319828],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_5e341bb97c90d8ee7969f78ab847c0b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9bf93ad7a848fa7a1ae4979640e53a13.setIcon(icon_5e341bb97c90d8ee7969f78ab847c0b4);
+        
+    
+            marker_9bf93ad7a848fa7a1ae4979640e53a13.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="nan" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">SemaConnect 620</span> (EVC 2)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/Blink%20logo.png" style="max-height: 80px; max-width: 100%;" alt="Blink">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_233327996eb0f0f05ca36d716a5c5de8 = L.marker(
+                [37.33448577012008, -121.89104538768561],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_787137b99af341f191606a8b65b87ac0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_233327996eb0f0f05ca36d716a5c5de8.setIcon(icon_787137b99af341f191606a8b65b87ac0);
+        
+    
+            marker_233327996eb0f0f05ca36d716a5c5de8.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="nan" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">SemaConnect 620</span> (EVC 3)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/Blink%20logo.png" style="max-height: 80px; max-width: 100%;" alt="Blink">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a24738ab958609ecbf807bb36358e548 = L.marker(
+                [37.33454369267461, -121.89104233372879],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_4d2f39898cc744189c3b20f5b2f400ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a24738ab958609ecbf807bb36358e548.setIcon(icon_4d2f39898cc744189c3b20f5b2f400ad);
+        
+    
+            marker_a24738ab958609ecbf807bb36358e548.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="nan" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">SemaConnect 620</span> (EVC 4)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/Blink%20logo.png" style="max-height: 80px; max-width: 100%;" alt="Blink">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7e49ddf01d9ba9b51571a568a0f017c = L.marker(
+                [37.808229740658376, -122.4120590131407],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_11c031686304964224bc19e96271db95 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c7e49ddf01d9ba9b51571a568a0f017c.setIcon(icon_11c031686304964224bc19e96271db95);
+        
+    
+            marker_c7e49ddf01d9ba9b51571a568a0f017c.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/laz_images/drive-download-20241113T064823Z-001/IMG_8034.JPG" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT2021</span> (#1)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_927fb100eab99e8c92396b614c73c072 = L.marker(
+                [37.792575752952715, -122.40085004292368],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_8840fbb47ec6e42927b8e3e5afc77159 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_927fb100eab99e8c92396b614c73c072.setIcon(icon_8840fbb47ec6e42927b8e3e5afc77159);
+        
+    
+            marker_927fb100eab99e8c92396b614c73c072.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/laz_images/drive-download-20241113T064823Z-001/IMG_8033.JPG" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">CT4020-HD-GW</span> (unknown1)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: red;">
+                        Not Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/ChargePoint_logo.jpg" style="max-height: 80px; max-width: 100%;" alt="ChargePoint">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fda1f7256deffc395ff73422466768ad = L.marker(
+                [37.79253065182643, -122.40078544686017],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_cb135594b0be5a378f74cdb0ff288822 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fda1f7256deffc395ff73422466768ad.setIcon(icon_cb135594b0be5a378f74cdb0ff288822);
+        
+    
+            marker_fda1f7256deffc395ff73422466768ad.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/laz_images/drive-download-20241113T064823Z-001/IMG_8030.JPG" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">Tesla Gen 2</span> (TESLA #1)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://logovent.com/blog/wp-content/uploads/2024/05/Breaking-Down-the-Font-and-Typography.png" style="max-height: 80px; max-width: 100%;" alt="Tesla">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f47f38534347429ca4ea4c3113a3c8c8 = L.marker(
+                [37.79248443842798, -122.40087219177934],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_64f971e7aa28665aa06ccfd5ca714766 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f47f38534347429ca4ea4c3113a3c8c8.setIcon(icon_64f971e7aa28665aa06ccfd5ca714766);
+        
+    
+            marker_f47f38534347429ca4ea4c3113a3c8c8.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/laz_images/drive-download-20241113T064823Z-001/IMG_8029.JPG" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">Tesla Gen 2</span> (TESLA #2)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://logovent.com/blog/wp-content/uploads/2024/05/Breaking-Down-the-Font-and-Typography.png" style="max-height: 80px; max-width: 100%;" alt="Tesla">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_079ced484001bb7e727e4d8ffe1b9901 = L.marker(
+                [37.78523503068268, -122.4206727889032],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_a00af810fcaae871e86a1ae209591860 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_079ced484001bb7e727e4d8ffe1b9901.setIcon(icon_a00af810fcaae871e86a1ae209591860);
+        
+    
+            marker_079ced484001bb7e727e4d8ffe1b9901.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/laz_images/drive-download-20241113T064823Z-001/IMG_8037.JPG" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">Terra</span> (BARRON)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    DC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://newmarketadvisors.com/wp-content/uploads/2024/04/EVgo.png" style="max-height: 80px; max-width: 100%;" alt="EVGo">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af46397ab7413ffdfdaa9b9bb63dbc99 = L.marker(
+                [37.78519577534482, -122.42060533896233],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_a0b986b7c7c90a06276004e90b873093 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_af46397ab7413ffdfdaa9b9bb63dbc99.setIcon(icon_a0b986b7c7c90a06276004e90b873093);
+        
+    
+            marker_af46397ab7413ffdfdaa9b9bb63dbc99.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/laz_images/drive-download-20241113T064823Z-001/IMG_8038.JPG" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">Terra</span> (LEYNAR)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: red;">
+                        Not Functional
+                    </span> &nbsp;•&nbsp;
+                    DC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://newmarketadvisors.com/wp-content/uploads/2024/04/EVgo.png" style="max-height: 80px; max-width: 100%;" alt="EVGo">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0dcfa48bad69c6fab8d899d9f5699ee7 = L.marker(
+                [37.7852552109891, -122.42069757991476],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_fd3f9b4cc84ba57a4b7292f02ea81ed8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0dcfa48bad69c6fab8d899d9f5699ee7.setIcon(icon_fd3f9b4cc84ba57a4b7292f02ea81ed8);
+        
+    
+            marker_0dcfa48bad69c6fab8d899d9f5699ee7.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/laz_images/drive-download-20241113T064823Z-001/IMG_8040.JPG" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">Terra</span> (RAYBURN)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    DC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://newmarketadvisors.com/wp-content/uploads/2024/04/EVgo.png" style="max-height: 80px; max-width: 100%;" alt="EVGo">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_10bd9d8b374d1a670869f1a11601b92e = L.marker(
+                [37.785234109213306, -122.42061809225667],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_93e137d65e5e3b85313bab615d0be40c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_10bd9d8b374d1a670869f1a11601b92e.setIcon(icon_93e137d65e5e3b85313bab615d0be40c);
+        
+    
+            marker_10bd9d8b374d1a670869f1a11601b92e.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/laz_images/drive-download-20241113T064823Z-001/IMG_8041.JPG" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">Terra</span> (COZZIE)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: red;">
+                        Not Functional
+                    </span> &nbsp;•&nbsp;
+                    DC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://newmarketadvisors.com/wp-content/uploads/2024/04/EVgo.png" style="max-height: 80px; max-width: 100%;" alt="EVGo">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6ad7057b9f037482eac28af8cf108b9 = L.marker(
+                [37.78518163227265, -122.42067254791293],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_d72b59dc5874cd1adc33efdf3d8761e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a6ad7057b9f037482eac28af8cf108b9.setIcon(icon_d72b59dc5874cd1adc33efdf3d8761e2);
+        
+    
+            marker_a6ad7057b9f037482eac28af8cf108b9.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/laz_images/drive-download-20241113T064823Z-001/IMG_8044.JPG" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">Terra</span> (TERU)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    DC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://newmarketadvisors.com/wp-content/uploads/2024/04/EVgo.png" style="max-height: 80px; max-width: 100%;" alt="EVGo">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81f2930d621a252ae788c6e0c49436d1 = L.marker(
+                [37.78522860381315, -122.42067820182821],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_170dd720df524a865618cad382394b5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_81f2930d621a252ae788c6e0c49436d1.setIcon(icon_170dd720df524a865618cad382394b5d);
+        
+    
+            marker_81f2930d621a252ae788c6e0c49436d1.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/laz_images/drive-download-20241113T064823Z-001/IMG_8045.JPG" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">Terra</span> (CHARMAINE)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: red;">
+                        Not Functional
+                    </span> &nbsp;•&nbsp;
+                    DC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://newmarketadvisors.com/wp-content/uploads/2024/04/EVgo.png" style="max-height: 80px; max-width: 100%;" alt="EVGo">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c32fae67ef949c956bb5d85659b90a4c = L.marker(
+                [37.78518611116754, -122.42067671650337],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_981d154b2361eec21278700dbcb320b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c32fae67ef949c956bb5d85659b90a4c.setIcon(icon_981d154b2361eec21278700dbcb320b9);
+        
+    
+            marker_c32fae67ef949c956bb5d85659b90a4c.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/laz_images/drive-download-20241113T064823Z-001/IMG_8048.JPG" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">Terra</span> (TYRELL)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    DC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://newmarketadvisors.com/wp-content/uploads/2024/04/EVgo.png" style="max-height: 80px; max-width: 100%;" alt="EVGo">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_08ee5a8c63a6a0381829bd92d9919545 = L.marker(
+                [37.785234071261385, -122.42067656507668],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_2495dd219798dae452ce442dc66ad5ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_08ee5a8c63a6a0381829bd92d9919545.setIcon(icon_2495dd219798dae452ce442dc66ad5ec);
+        
+    
+            marker_08ee5a8c63a6a0381829bd92d9919545.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/laz_images/drive-download-20241113T064823Z-001/IMG_8049.JPG" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">Terra</span> (LONNIE)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    DC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://newmarketadvisors.com/wp-content/uploads/2024/04/EVgo.png" style="max-height: 80px; max-width: 100%;" alt="EVGo">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aaf74fd6a844953eeb251fe4f3b84fe3 = L.marker(
+                [37.78519558709346, -122.42060751018329],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_8d203bc1b496d727b9fae85b598c5f96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_aaf74fd6a844953eeb251fe4f3b84fe3.setIcon(icon_8d203bc1b496d727b9fae85b598c5f96);
+        
+    
+            marker_aaf74fd6a844953eeb251fe4f3b84fe3.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/laz_images/drive-download-20241113T064823Z-001/IMG_8052.JPG" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">Terra</span> (MERCEDES)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    DC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Dual
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://newmarketadvisors.com/wp-content/uploads/2024/04/EVgo.png" style="max-height: 80px; max-width: 100%;" alt="EVGo">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8521616217003c716a72ccf24c380543 = L.marker(
+                [37.78522060515907, -122.42061700489191],
+                {}
+            ).addTo(map_a4954e3dbb3051384fe21c27e7d4bd3a);
+        
+    
+            var icon_7560443ba5091bf6b765213bebc1fe16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8521616217003c716a72ccf24c380543.setIcon(icon_7560443ba5091bf6b765213bebc1fe16);
+        
+    
+            marker_8521616217003c716a72ccf24c380543.bindTooltip(
+                `<div>
+                     
+        <div style="font-family: 'Arial', sans-serif; color: #333; display: flex; align-items: flex-start;">
+            <!-- Left section with main image -->
+            <div style="flex-shrink: 0; margin-right: 15px;">
+                <img src="https://kcbafdbbaqrmnabaaopi.supabase.co/storage/v1/object/public/laz_images/drive-download-20241113T064823Z-001/IMG_8054.JPG" height="150px" alt="Charger Image">
+            </div>
+
+            <!-- Right section with header, subheader, and additional images -->
+            <div style="flex-grow: 1;">
+                <!-- Main header (ModelID) -->
+                <div style="text-align: left; font-size: 18px;">
+                    <span style="font-weight: bold;">SemaConnect 620</span> (L2 1)
+                </div>
+
+                <!-- Subheader with three fields below ModelID -->
+                <div style="font-size: 14px; margin-top: 5px; margin-bottom: 10px; color: #555;">
+                    <span style="color: green;">
+                        Functional
+                    </span> &nbsp;•&nbsp;
+                    AC &nbsp;•&nbsp;
+                    7.7kW &nbsp;•&nbsp;
+                    Single
+                </div>
+
+
+                <!-- Centered image below subheader with constraints -->
+                <div style="text-align: center; margin-top: 10px;">
+                    <img src="https://calevip.org/sites/default/files/2019-02/Blink%20logo.png" style="max-height: 80px; max-width: 100%;" alt="Blink">
+                </div>
+            </div>
+        </div>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
